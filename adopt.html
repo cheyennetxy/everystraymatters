@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adopt - Every Stray Matters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="Every Stray Matters Logo" height="40" class="me-2" />
+        Every Stray Matters
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="adopt.html">Adopt</a></li>
+          <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Dogs Available for Adoption -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="mb-4 text-center">Meet Our Rescue Dogs</h1>
+    <div class="row g-4" id="dogCards">
+      <!-- Dog Cards inserted here via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Dog Details Modal -->
+<div
+  class="modal fade"
+  id="dogModal"
+  tabindex="-1"
+  aria-labelledby="dogModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dogModalLabel">Dog Name</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <img src="" id="dogModalImg" alt="Dog Image" class="img-fluid" />
+        <p id="dogModalDesc" class="mt-3"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+
+<!-- Upper footer -->
+<footer class="footer-main">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>Address</h5>
+        <p>📍 59 Sungei Tengah Rd, Singapore 699014</p>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>Contact</h5>
+        <p>✉️ everystraymatterssg@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <p>
+          <a href="https://www.facebook.com/share/g/19UKk8kta6/" target="_blank" rel="noopener" class="text-reset me-3" aria-label="Facebook">
+            <i class="bi bi-facebook" style="font-size: 1.2rem;"></i>
+          </a>
+          <a href="https://www.instagram.com/every_stray_matters/?hl=en" target="_blank" rel="noopener" class="text-reset" aria-label="Instagram">
+            <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bottom footer -->
+<footer class="footer-bottom">
+  <div class="container">
+    <p class="mb-0">© 2025 Every Stray Matters. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/dogs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
